@@ -12,6 +12,7 @@ lerna-debug.log*
 
 # Caches
 
+build
 .cache
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
