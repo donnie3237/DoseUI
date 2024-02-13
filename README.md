@@ -1,15 +1,10 @@
-# test
+![logo](https://github.com/donnie3237/DoseUI/og.png)
 
-To install dependencies:
+# Welcome to DoseUI
 
-```bash
-bun install
-```
+DoseUI is a modern UI framework designed to be fast, minimal, and easy to use. Build beautiful interfaces with less code.
+- Quick start
+  - npm i -D dose3ui@latest
+  - import code in your `tailwind.config.js`
 
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.0.26. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+<a href="https://ui.dxse.site/"> for more information</a>

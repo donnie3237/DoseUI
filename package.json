@@ -1,19 +1,31 @@
 {
-  "name": "dose444",
+  "name": "dose3ui",
   "devDependencies": {
     "@types/bun": "latest"
   },
-  "version": "1.0.0",
+  "version": "0.0.20",
   "main": "build/plugin.mjs",
   "files":[
-    "build"
+    "build/plugin.mjs"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donnie3237/DoseUI.git"
+  },
+  "homepage": "https://ui.dxse.site",
+  "keywords": [
+    "doseui",
+    "css",
+    "ui",
+    "tailwindcss",
+    "plugin",
+    "design"
+  ],
+  "bugs": {
+    "url": "git+https://github.com/donnie3237/DoseUI.git"
+  },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  },
-  "scripts": {
-    "build": "bun build ./src/{components}/* --outdir ./dist",
-    "builds": "bun build ./lib/{components,Layout}/* --outdir ./dist"
   },
   "dependencies": {
     "autoprefixer": "^10.4.17",

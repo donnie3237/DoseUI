@@ -11,9 +11,16 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/solid-js": "^4.0.1",
+    "@astrojs/svelte": "^5.0.3",
     "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vue": "^4.0.8",
     "astro": "^4.3.6",
+    "dose3ui": "latest",
     "dose444": "^1.0.0",
-    "tailwindcss": "^3.4.1"
+    "solid-js": "^1.8.14",
+    "svelte": "^4.2.10",
+    "tailwindcss": "^3.4.1",
+    "vue": "^3.4.18"
   }
 }

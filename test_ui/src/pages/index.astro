@@ -1,11 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Vue from '../components/dose.vue';
+import Svelte from '../components/dose.svelte'
+import CAstro from '../components/Card.astro';
+import Re from '../components/dose.tsx'
 ---
 
 <Layout title="Welcome to Astro.">
-	<button class="d-btn">rd</button>
-	<button class="d-btn-danger">rdvdvred</button>
-	<h1 class="d-text-fantasy">dfkjgnowrng</h1>
-	<div class="d-loading"></div>
+	<div class="d-flex-center flex-col">
+		<Vue/>
+		<Svelte/>
+		<CAstro/>
+		<Re/>
+	</div>
 </Layout>
