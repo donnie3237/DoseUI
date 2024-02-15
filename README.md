@@ -1,4 +1,4 @@
-![logo](https://github.com/donnie3237/DoseUI/og.png)
+![logo](https://github.com/donnie3237/DoseUI/blob/main/og.png)
 
 # Welcome to DoseUI
 
