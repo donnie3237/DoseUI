@@ -2,7 +2,7 @@ import { $ } from 'bun'
 import { build, type Options } from 'tsup'
 
 const tsupConfig: Options = {
-	entry: ['./lib/**/*.ts'],
+	entry: ['./core/**/*.ts'],
 	splitting: false,
 	sourcemap: false,
 	clean: true,
@@ -34,7 +34,7 @@ await Promise.all([
 ])
 
 await Bun.build({
-	entrypoints: ['./lib/plugin.ts'],
+	entrypoints: ['./core/plugin.ts'],
 	outdir: './build',
 })
 
