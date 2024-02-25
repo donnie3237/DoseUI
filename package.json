@@ -3,7 +3,7 @@
   "devDependencies": {
     "@types/bun": "latest"
   },
-  "version": "0.0.20",
+  "version": "0.0.21",
   "main": "build/plugin.mjs",
   "files":[
     "build/plugin.mjs"
