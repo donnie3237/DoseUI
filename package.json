@@ -5,8 +5,8 @@
   },
   "version": "0.0.21",
   "main": "build/plugin.mjs",
-  "files":[
-    "build/plugin.mjs"
+  "files": [
+    "build"
   ],
   "repository": {
     "type": "git",

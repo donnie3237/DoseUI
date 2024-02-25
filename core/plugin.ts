@@ -8,6 +8,7 @@ import { text } from './components/text';
 import { blob } from './components/blob';
 import { parallax } from './components/parallax';
 import { snap } from './components/snap';
+import { menu } from './components/menu';
 
 const components = Object.assign({}, 
     button, 
@@ -18,7 +19,8 @@ const components = Object.assign({},
     text,
     blob,
     parallax,
-    snap
+    snap,
+    menu
 );
 
 module.exports = plugin(

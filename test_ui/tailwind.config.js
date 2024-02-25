@@ -4,5 +4,5 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require("dose3ui")],
+  plugins: [require("../build/plugin.mjs")],
 };

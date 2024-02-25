@@ -1,0 +1,53 @@
+export const menu = {
+    '.d-menu': {
+        overflow: "hidden",
+        resize: "vertical",
+        height: "100%"
+    },
+    '.d-nav':{
+        display: "flex",
+        flexDirection: "column",
+        gap: "10px",
+        padding: "1.5rem",
+        overflow: "auto",
+        background: "hsla(0, 0%, 0%, 0.8)",
+        backdropFilter: "blur(4px)",
+        borderRadius: "10px",
+        clipPath: "inset(0 0 0 0 round 10px)",
+        scrollSnapType: "y mandatory",
+        scrollbarColor: "hsl(0 0% 10% / 0.5) transparent",
+        scrollbarWidth: "thin",
+        boxShadow: "0 1px hsl(0 0% 100% / 0.5) inset",
+        height: "500px",
+        width: "80px",
+        alignItems: "center",
+    },
+    '.d-nav-x':{
+        display: "flex",
+        gap: "10px",
+        padding: "1.5rem",
+        overflow: "auto",
+        background: "hsla(0, 0%, 0%, 0.8)",
+        backdropFilter: "blur(4px)",
+        borderRadius: "10px",
+        clipPath: "inset(0 0 0 0 round 10px)",
+        scrollSnapType: "y mandatory",
+        scrollbarColor: "hsl(0 0% 10% / 0.5) transparent",
+        scrollbarWidth: "thin",
+        boxShadow: "0 1px hsl(0 0% 100% / 0.5) inset",
+        height: "80px",
+        width: "500px",
+        alignItems: "center",
+    },
+    '.d-menu-list':{
+        display: "grid",
+        placeItems: "center",
+        background: "linear-gradient(hsl(0 0% 100% / 0.15), #0000), hsl(0 0% 4%)",
+        borderRadius: "8px",
+        flex: "1 0 auto",
+        scrollSnapAlign: "center",
+        width: "56px",
+        height: "56px",
+        boxShadow: "0 -1px hsl(0 0% 0% / 0.5) inset, 0 2px 4px hsl(0 0% 0% / 0.5),0 1px hsl(0 0% 100% / 0.5) inset"
+    }
+}
