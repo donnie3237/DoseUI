@@ -18,6 +18,7 @@
     "astro": "^4.3.6",
     "dose3ui": "latest",
     "dose444": "^1.0.0",
+    "sass": "^1.72.0",
     "solid-js": "^1.8.14",
     "svelte": "^4.2.10",
     "tailwindcss": "^3.4.1",
