@@ -22,5 +22,23 @@ export const text = {
         color: "transparent !important",
         backgroundClip: "text !important",
         fontWeight: "900 !important"
-    }
+    },
+    '.d-text-ocean':{
+        backgroundImage: "linear-gradient(70deg,#2e3192 10%,#39a1e2 90%)",
+        color: "transparent !important",
+        backgroundClip: "text !important",
+        fontWeight: "900 !important"
+    },
+    '.d-text-sand':{
+        backgroundImage: "linear-gradient(70deg,#d6145b 10%,#faad3c 90%)",
+        color: "transparent !important",
+        backgroundClip: "text !important",
+        fontWeight: "900 !important"
+    },
+    '.d-text-lime':{
+        backgroundImage: "linear-gradient(70deg,#009345 10%,#f4eb22 90%)",
+        color: "transparent !important",
+        backgroundClip: "text !important",
+        fontWeight: "900 !important"
+    },
 }
