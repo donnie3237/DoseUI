@@ -10,6 +10,8 @@ import { parallax } from './components/parallax';
 import { snap } from './components/snap';
 import { menu } from './components/menu';
 import { input } from './components/input';
+import {masonry} from './Layout/masonry'
+import { masonryx } from './Layout/masonryx';
 
 const components = Object.assign({}, 
     button, 
@@ -22,7 +24,9 @@ const components = Object.assign({},
     parallax,
     snap,
     menu,
-    input
+    input,
+    masonry,
+    masonryx
 );
 
 module.exports = plugin(
