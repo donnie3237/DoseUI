@@ -12,6 +12,10 @@ import { menu } from './components/menu';
 import { input } from './components/input';
 import {masonry} from './Layout/masonry'
 import { masonryx } from './Layout/masonryx';
+import { alearts } from './components/aleart';
+
+
+import { dose } from './components/table';
 
 const components = Object.assign({}, 
     button, 
@@ -26,11 +30,13 @@ const components = Object.assign({},
     menu,
     input,
     masonry,
-    masonryx
+    masonryx,
+    alearts
 );
 
 module.exports = plugin(
-    function({addComponents}){
+    function({addComponents , matchUtilities}){
         addComponents(components)
+        matchUtilities(dose);
     }
 )

@@ -7,11 +7,6 @@ const tsupConfig: Options = {
 	sourcemap: false,
 	clean: true,
 	bundle: true
-	// outExtension() {
-	// 	return {
-	// 		js: '.js'
-	// 	}
-	// }
 } satisfies Options
 
 await Promise.all([
@@ -38,13 +33,13 @@ await Bun.build({
 	outdir: './build',
 })
 
-await Bun.sleep(2000)
+// await Bun.sleep(2000)
 
-await Promise.all([
-	$`cp dist/cjs/*.d.ts dist/`,
-	$`cp dist/cjs/ws/*.d.ts dist/ws/`
-])
+// await Promise.all([
+// 	$`cp dist/cjs/*.d.ts dist/`,
+// 	$`cp dist/cjs/ws/*.d.ts dist/ws/`
+// ])
 
-await $`cp dist/index*.d.ts dist/bun`
+// await $`cp dist/index*.d.ts dist/bun`
 
 process.exit()
