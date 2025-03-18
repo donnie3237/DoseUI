@@ -7,4 +7,4 @@ DoseUI is a modern UI framework designed to be fast, minimal, and easy to use. B
   - npm i -D dose3ui@latest
   - import code in your `tailwind.config.js`
 
-<a href="https://ui.dxse.site/"> for more information</a>
+<a href="https://doseui.dossware.com/"> for more information</a>
