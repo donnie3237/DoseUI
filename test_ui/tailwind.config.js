@@ -4,5 +4,5 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require("../build/plugin.mjs")],
+  plugins: [require("../dist/cjs/plugin.js")],
 };

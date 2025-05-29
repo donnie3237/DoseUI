@@ -1,45 +1,47 @@
-import { $ } from 'bun'
-import { build, type Options } from 'tsup'
+const { build } = require("esbuild");
+const { dependencies, peerDependencies } = require("./package.json");
+const { Generator } = require("npm-dts");
 
-const tsupConfig: Options = {
-	entry: ['./core/**/*.ts'],
-	splitting: false,
-	sourcemap: false,
-	clean: true,
-	bundle: true
-} satisfies Options
+// Improved type definitions generation
+async function generateTypeDefinitions() {
+  const generator = new Generator({
+    entry: "core/**/*.ts",
+  });
+  await generator.generate(); // Use async/await for cleaner handling
+}
 
-await Promise.all([
-	// ? tsup esm
-	build({
-		outDir: 'build',
-		format: 'esm',
-		target: 'node20',
-		cjsInterop: false,
-		...tsupConfig
-	}),
-	// ? tsup cjs
-	build({
-		outDir: 'build/cjs',
-		format: 'cjs',
-		target: 'node20',
-		dts: true,
-		...tsupConfig
-	})
-])
+// Combined shared configuration with enhanced comments
+const sharedConfig = {
+  entryPoints: ["core/**/*.ts"],
+  bundle: true,
+  minify: true,
+};
 
-await Bun.build({
-	entrypoints: ['./core/plugin.ts'],
-	outdir: './build',
-})
+(async () => {
+  try {
+    await generateTypeDefinitions(); // Generate type definitions first
+    console.log("Type definitions generated");
 
-// await Bun.sleep(2000)
+    // CJS build
+    await build({
+      ...sharedConfig,
+      platform: "node",
+      format: "cjs",
+      outdir: "dist/cjs",
+      target: "es2022",
+    });
+    console.log("CJS build done");
 
-// await Promise.all([
-// 	$`cp dist/cjs/*.d.ts dist/`,
-// 	$`cp dist/cjs/ws/*.d.ts dist/ws/`
-// ])
-
-// await $`cp dist/index*.d.ts dist/bun`
-
-process.exit()
+    // ESM build
+    // await build({
+    //   ...sharedConfig,
+    //   platform: 'node',
+    //   format: "esm",
+    //   outdir: "dist",
+    //   target: "es2022",
+    // });
+    // console.log("ESM build done");
+  } catch (error) {
+    console.error(error);
+  }
+})();
